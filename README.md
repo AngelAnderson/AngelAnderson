@@ -27,9 +27,16 @@ Building in public. Tracking everything.
 
 ---
 
+### 📝 Latest
+
+→ [angelanderson.com](https://angelanderson.com) — Updates, writing, build-in-public posts
+
+---
+
 ### 🌐 Find me
 
 [![Website](https://img.shields.io/badge/Website-angelanderson.com-black?style=flat-square)](https://angelanderson.com)
+[![X / Twitter](https://img.shields.io/badge/X-angelfanderson-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/angelfanderson)
 [![Facebook](https://img.shields.io/badge/Facebook-Angel%20Anderson-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://facebook.com/angelfanderson)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-angelfanderson-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/angelfanderson)
 
