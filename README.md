@@ -11,7 +11,7 @@ Building a $1B company from Cabo Rojo, Puerto Rico — no employees, just AI.
 |---------|------|--------|
 | 📚 **[Ajoráo No Es Un Plan](https://mastiempo.net)** | Productivity mini-book for the chronically overwhelmed | Launching |
 | 🗺️ **[CaboRojo.com](https://caboRojo.com)** | Local business directory — 150+ listings, growing | Active |
-| 🤖 **WhatsApp AI Automation** | Local business automation for PR entrepreneurs | Building |
+| 🤖 **[El Veci](https://github.com/AngelAnderson/el-veci)** | WhatsApp AI assistant for local businesses in PR | Building |
 
 ---
 
