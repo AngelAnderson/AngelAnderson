@@ -1,30 +1,53 @@
 # Angel Anderson
 
-**I help local businesses get found, get customers, and get paid — using AI.**
+**I build AI infrastructure for small towns.**
 
-Solo entrepreneur. Air Force veteran (21 years). MBA.
+Solo founder. Air Force veteran (21 years). MBA.
 Building from Cabo Rojo, Puerto Rico. No employees — just AI.
+
+---
+
+### The 7711 Knowledge Layer
+
+I turned a small-town SMS bot into a **knowledge layer that any AI agent can query**.
+
+974 businesses. Semantic search. MCP protocol. REST API. And you can still just text it.
+
+**[api.vecinoai.com](https://api.vecinoai.com/?action=docs)** — try it live
+
+```bash
+curl 'https://api.vecinoai.com?q=pizza'
+```
+
+Or text `JSON: pizza` to **787-417-7711** for structured data via SMS.
+
+6 MCP tools available for any AI agent: `search_businesses`, `get_business`, `get_categories`, `get_open_now`, `get_trending`, `get_events`
 
 ---
 
 ### What I've built (solo, with AI)
 
-**[PalOeste.com](https://paloeste.com)** — Digital magazine & business directory for western Puerto Rico
-- 162+ businesses indexed, 15 paying sponsors, 4-tier sponsorship model
-- AI-powered search, WhatsApp bot integration, Stripe payments
-- [See the code →](https://github.com/AngelAnderson/paloeste)
+**[7711 Knowledge Layer](https://api.vecinoai.com/?action=docs)** — Local business intelligence API
+- 974+ businesses with semantic embeddings, bilingual search, real-time hours
+- REST API, MCP JSON-RPC, SMS JSON mode — three interfaces, one search brain
+- 8,346+ demand signals proving what people actually search for
 
-**[El Veci](https://mapadecaborojo.com)** (*787-417-7711) — WhatsApp AI concierge
+**[El Veci](https://vecinoai.com)** (*787-417-7711) — SMS/WhatsApp AI concierge
 - Text the bot, get local business recommendations instantly
-- 62 active users, 58% retention, lead delivery to sponsors
-- Real people using it daily in Cabo Rojo
+- Voice note transcription, photo analysis via Gemini Vision, video sessions
+- Lead delivery, business concierge, civic reporting, tutor mode
+
+**[CaboRojo.com](https://caborojo.com)** — Local editorial + business directory (WordPress)
+
+**[PalOeste.com](https://paloeste.com)** — Digital magazine & directory for western Puerto Rico
+- [See the code](https://github.com/AngelAnderson/paloeste)
+
+**[MapaDeCaboRojo.com](https://mapadecaborojo.com)** — Interactive AI map with Gemini Concierge
+- [See the code](https://github.com/AngelAnderson/MapaDeCaboRojo-v1.0)
+
+**[AJORAO NO ES UN PLAN](https://mastiempo.net)** — Book: 7 rules to protect your day ($9.99)
 
 **[Facu](https://github.com/AngelAnderson/Facu)** — AI invoice generator for self-employed workers
-- "Facu, factura a María por $500 de plomería" → professional PDF in seconds
-- Built for plumbers, mechanics, freelancers who lose money on slow billing
-
-**[AJORÁO NO ES UN PLAN](https://mastiempo.net)** — Mini-book: 7 rules to protect your day ($9.99)
-- Launching April 2026 on Amazon + direct sales via Stripe
 
 ---
 
@@ -32,36 +55,33 @@ Building from Cabo Rojo, Puerto Rico. No employees — just AI.
 
 | | |
 |---|---|
-| **6** | Live domains generating traffic and revenue |
-| **162+** | Businesses in the directory |
-| **62** | Active WhatsApp bot users |
-| **58%** | Bot user retention rate |
-| **15** | Paying sponsors |
-| **$0** | Spent on employees |
+| **974+** | Businesses in the knowledge layer |
+| **8,346+** | Demand signals (real searches) |
+| **10** | Live domains |
+| **6** | MCP tools for AI agents |
+| **3** | Revenue channels (sponsors, book, API) |
+| **0** | Employees |
 
 ---
 
-### Want something like this for YOUR town?
+### The vision
 
-I built a complete local business ecosystem — directory, AI bot, sponsorship model, magazine — for one town in Puerto Rico. The same system works anywhere.
+Every small town is invisible to AI. Ask any LLM about restaurants in Cabo Rojo and it hallucinate or punts.
 
-**If you want to talk:**
-- WhatsApp: [787-417-7711](https://wa.me/17874177711)
-- Web: [angelanderson.com](https://angelanderson.com)
-- Book: [mastiempo.net](https://mastiempo.net)
+A knowledge layer fixes that — structured data that AI agents can programmatically access. Cabo Rojo is the proof of concept. 78 Puerto Rico municipalities are next.
 
 ---
 
-### Tech (for the curious)
+### Tech
 
-`Next.js 16` `React 19` `TypeScript` `Supabase` `Vercel` `Google Gemini` `OpenAI` `Twilio` `Stripe` `Tailwind CSS` `Shadcn/ui` `Leaflet`
+`Next.js 16` `React 19` `TypeScript` `Supabase` `Vercel` `OpenAI` `Google Gemini` `Twilio` `Stripe` `Tailwind CSS` `MCP` `Deno`
 
 > Every product here was designed, built, and deployed by one person using AI as the entire engineering team. The code is real, the users are real, and the revenue is real.
 
 ---
 
 [![Website](https://img.shields.io/badge/Website-angelanderson.com-black?style=flat-square)](https://angelanderson.com)
+[![API Docs](https://img.shields.io/badge/API-api.vecinoai.com-14b8a6?style=flat-square)](https://api.vecinoai.com/?action=docs)
 [![X / Twitter](https://img.shields.io/badge/X-angelfanderson-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/angelfanderson)
-[![Facebook](https://img.shields.io/badge/Facebook-CaboRojo.com-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://facebook.com/caborojocom)
 
 Cabo Rojo, Puerto Rico
