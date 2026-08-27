@@ -14,7 +14,7 @@ Verified against the live database on 2026-08-27. The query is in [MapaDeCaboRoj
 
 | Number | What it is |
 |---|---|
-| **35,621** | Published records across Puerto Rico |
+| **35,614** | Published records across Puerto Rico |
 | **78** | Municipalities covered (all of them) |
 | **30,622** | Records matched to the federal NPPES registry |
 | **292** | Records a **human** actually confirmed |
