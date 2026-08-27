@@ -1,87 +1,86 @@
 # Angel Anderson
 
-**I build AI infrastructure for small towns.**
+**I build verified local data infrastructure for Puerto Rico.**
 
-Solo founder. Air Force veteran (21 years). MBA.
-Building from Cabo Rojo, Puerto Rico. No employees — just AI.
+Solo operator. Air Force veteran (20 years). MBA. Cabo Rojo, Puerto Rico. No employees, just AI.
+
+Most local data is scraped, inherited, and never checked again. Every office you call makes you re-prove what another office already proved. I am building the opposite: a substrate where the check is the product, and where the check says who did it and when.
 
 ---
 
-### The 7711 Knowledge Layer
+## The scoreboard
 
-I turned a small-town SMS bot into a **knowledge layer that any AI agent can query**.
+Verified against the live database on 2026-08-27. The query is in [MapaDeCaboRojo-v1.0](https://github.com/AngelAnderson/MapaDeCaboRojo-v1.0).
 
-974 businesses. Semantic search. MCP protocol. REST API. And you can still just text it.
+| Number | What it is |
+|---|---|
+| **35,621** | Published records across Puerto Rico |
+| **78** | Municipalities covered (all of them) |
+| **30,622** | Records matched to the federal NPPES registry |
+| **292** | Records a **human** actually confirmed |
+| **676** | Real demand signals from 374 real people, last 90 days |
+| **0** | Employees |
 
-**[api.vecinoai.com](https://api.vecinoai.com/?action=docs)** — try it live
+That fourth row is the honest one: **0.8%**. Everything else is imported, and imported is not verified. A record copied from a federal registry is the same record the insurance plan already has, so it inherits nothing and I do not sell it as a check. Closing that gap is the actual work, and I publish the number every time it moves.
+
+If a directory does not show you this ratio, it has one too.
+
+---
+
+## Where the system ends
+
+Named on purpose, because these are the seams:
+
+- **The phone call.** Of 157 provider numbers measured against Twilio Lookup, only 39.5% are mobile. A text does not reach the rest. Confirming "does this office still take her plan" ends at a human dialing a front desk during business hours, and that human is me.
+- **The claim form nobody fills out.** Crowdsourced confirmations are the cheapest path to a verified record and the slowest one in practice.
+- **Absence.** Proving a town has no cardiologist is harder than listing the ones it has, and it is the fact that actually changes what a family does next.
+
+---
+
+## How a record gets verified
+
+Five rules, each one paid for with a real incident:
+
+1. **Imported is not verified.** The claim is partitioned by source or it is not made.
+2. **A synthetic filter is defined by the source of the traffic, never by the channel.** Every new channel arrives unfiltered by default.
+3. **A zero is not evidence.** A section with no instrumentation reports "not measured", not "none".
+4. **The seal names who confirmed it.** Three levels: a person, a corroborating source, or a registry copy that claims nothing.
+5. **An internal fact expires too.** Every number carries the date it was checked, including the ones in this file.
+
+---
+
+## What is running
+
+| | |
+|---|---|
+| [**registromedicopr.com**](https://registromedicopr.com/registro) | Puerto Rico medical specialists, matched to NPPES. Search by symptom, town, or insurance plan. Bilingual |
+| [**mapadecaborojo.com**](https://www.mapadecaborojo.com) | Verified map and directory for Cabo Rojo |
+| [**puertoricosinfiltros.com**](https://puertoricosinfiltros.com) | Civic records: the number, the source, and what to do with it |
+| [**caborojo.com**](https://www.caborojo.com) | The local publication the whole thing feeds |
+| **El Veci** | Text **787-417-7711** or [WhatsApp](https://wa.me/17874177711). Answers in Spanish, 24/7, since 2026 |
+
+**For machines:** [api.vecinoai.com](https://api.vecinoai.com/?action=docs) is open. There is also an MCP server, `pr-publico`, that publishes its own error bars: ask it `verificacion_estado` and it tells you how much of the data is fresh **before** you use it.
 
 ```bash
 curl 'https://api.vecinoai.com?q=pizza'
 ```
 
-Or text `JSON: pizza` to **787-417-7711** for structured data via SMS.
-
-6 MCP tools available for any AI agent: `search_businesses`, `get_business`, `get_categories`, `get_open_now`, `get_trending`, `get_events`
+Unique to this substrate: the historical archive of provider directories published by Puerto Rico health plans, paired against NPPES. It can answer whether a doctor is still in network and whether the phone number the plan printed is the right one. Nobody else kept those files.
 
 ---
 
-### What I've built (solo, with AI)
+## Stack
 
-**[7711 Knowledge Layer](https://api.vecinoai.com/?action=docs)** — Local business intelligence API
-- 974+ businesses with semantic embeddings, bilingual search, real-time hours
-- REST API, MCP JSON-RPC, SMS JSON mode — three interfaces, one search brain
-- 8,346+ demand signals proving what people actually search for
+`TypeScript` `Supabase` `Postgres` `Deno` `Vercel` `Next.js` `Twilio` `MCP` `OpenAI` `Anthropic`
 
-**[El Veci](https://vecinoai.com)** (*787-417-7711) — SMS/WhatsApp AI concierge
-- Text the bot, get local business recommendations instantly
-- Voice note transcription, photo analysis via Gemini Vision, video sessions
-- Lead delivery, business concierge, civic reporting, tutor mode
-
-**[CaboRojo.com](https://caborojo.com)** — Local editorial + business directory (WordPress)
-
-**[PalOeste.com](https://paloeste.com)** — Digital magazine & directory for western Puerto Rico
-- [See the code](https://github.com/AngelAnderson/paloeste)
-
-**[MapaDeCaboRojo.com](https://mapadecaborojo.com)** — Interactive AI map with Gemini Concierge
-- [See the code](https://github.com/AngelAnderson/MapaDeCaboRojo-v1.0)
-
-**[AJORAO NO ES UN PLAN](https://mastiempo.net)** — Book: 7 rules to protect your day ($9.99)
-
-**[Facu](https://github.com/AngelAnderson/Facu)** — AI invoice generator for self-employed workers
+Designed, built, deployed, and operated by one person using AI as the entire engineering team. The code is real, the users are real, and the revenue is real.
 
 ---
 
-### The numbers
+## One door
 
-| | |
-|---|---|
-| **974+** | Businesses in the knowledge layer |
-| **8,346+** | Demand signals (real searches) |
-| **10** | Live domains |
-| **6** | MCP tools for AI agents |
-| **3** | Revenue channels (sponsors, book, API) |
-| **0** | Employees |
+If you run a newsroom, a health plan, or a municipality and you need Puerto Rico data with a verifiable check on it, write me: **angel@angelanderson.com**. Tell me what you are trying to prove. No deck, no call needed.
 
----
+If you are here for the method instead of the data, take it. That is what this file is for.
 
-### The vision
-
-Every small town is invisible to AI. Ask any LLM about restaurants in Cabo Rojo and it hallucinate or punts.
-
-A knowledge layer fixes that — structured data that AI agents can programmatically access. Cabo Rojo is the proof of concept. 78 Puerto Rico municipalities are next.
-
----
-
-### Tech
-
-`Next.js 16` `React 19` `TypeScript` `Supabase` `Vercel` `OpenAI` `Google Gemini` `Twilio` `Stripe` `Tailwind CSS` `MCP` `Deno`
-
-> Every product here was designed, built, and deployed by one person using AI as the entire engineering team. The code is real, the users are real, and the revenue is real.
-
----
-
-[![Website](https://img.shields.io/badge/Website-angelanderson.com-black?style=flat-square)](https://angelanderson.com)
-[![API Docs](https://img.shields.io/badge/API-api.vecinoai.com-14b8a6?style=flat-square)](https://api.vecinoai.com/?action=docs)
-[![X / Twitter](https://img.shields.io/badge/X-angelfanderson-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/angelfanderson)
-
-Cabo Rojo, Puerto Rico
+[angelanderson.com](https://angelanderson.com) · [@angelfanderson](https://x.com/angelfanderson) · Cabo Rojo, Puerto Rico
